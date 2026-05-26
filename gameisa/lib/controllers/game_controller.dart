@@ -3,7 +3,6 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 import '../models/card_model.dart';
-
 class GameController extends ChangeNotifier {
   List<CardModel> _cards = [];
   int _moves = 0;
@@ -15,9 +14,9 @@ class GameController extends ChangeNotifier {
   
   // Emojis e ícones para as cartas
   static const List<String> _emojis = [
-    '🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼',
+    '🐶', '🐱',  '🐹', '🐰', '🦊', '🐻', '🐼',
     '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵', '🐔',
-    '🐧', '🐦', '🐤', '🦆', '🦅', '🦉', '🦇', '🐺'
+    '🐧',  '🐤', '🦆', '🦅', '🦉', '🦇', '🐺'
   ];
   
   // Getters

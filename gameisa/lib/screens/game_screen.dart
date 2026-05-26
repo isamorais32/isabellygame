@@ -68,7 +68,7 @@ class _GameScreenState extends State<GameScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withAlpha(13),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -140,7 +140,7 @@ class _GameScreenState extends State<GameScreen> {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.green.withOpacity(0.3),
+            color: Colors.green.withAlpha(77),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),
@@ -202,23 +202,23 @@ class _GameScreenState extends State<GameScreen> {
             TextButton(
               onPressed: () {
                 Navigator.pop(context);
-                context.read<GameController>().startNewGame(pairs: 4);
-              },
-              child: const Text('Fácil (4 pares)'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
                 context.read<GameController>().startNewGame(pairs: 8);
               },
-              child: const Text('Médio (8 pares)'),
+              child: const Text('Fácil (8 pares)'),
             ),
             TextButton(
               onPressed: () {
                 Navigator.pop(context);
-                context.read<GameController>().startNewGame(pairs: 12);
+                context.read<GameController>().startNewGame(pairs: 10);
               },
-              child: const Text('Difícil (12 pares)'),
+              child: const Text('Médio (10 pares)'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+                context.read<GameController>().startNewGame(pairs: 14);
+              },
+              child: const Text('Difícil (14 pares)'),
             ),
           ],
         );

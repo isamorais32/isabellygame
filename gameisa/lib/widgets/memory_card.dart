@@ -23,7 +23,7 @@ class MemoryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withAlpha(26),
               blurRadius: 4,
               offset: const Offset(0, 2),
             ),
@@ -42,7 +42,7 @@ class MemoryCard extends StatelessWidget {
       return Container(
         key: ValueKey('matched_${card.id}'),
         decoration: BoxDecoration(
-          color: Colors.green.withOpacity(0.3),
+          color: Colors.green.withAlpha(77),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: Colors.green,

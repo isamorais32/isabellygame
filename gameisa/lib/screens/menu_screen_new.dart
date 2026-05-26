@@ -93,14 +93,14 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
                             padding: const EdgeInsets.all(20),
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Colors.white.withOpacity(0.15),
+                              color: Colors.white.withAlpha(38),
                               border: Border.all(
-                                color: Colors.white.withOpacity(0.3),
+                                color: Colors.white.withAlpha(77),
                                 width: 2,
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.white.withOpacity(0.2),
+                                  color: Colors.white.withAlpha(51),
                                   blurRadius: 20,
                                 ),
                               ],
@@ -132,7 +132,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
                             'Desafie sua memória',
                             style: TextStyle(
                               fontSize: 16,
-                              color: Colors.white.withOpacity(0.8),
+                              color: Colors.white.withAlpha(204),
                               fontStyle: FontStyle.italic,
                             ),
                           ),
@@ -150,7 +150,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
                     child: Column(
                       children: [
                         Divider(
-                          color: Colors.white.withOpacity(0.3),
+                          color: Colors.white.withAlpha(77),
                           thickness: 1,
                         ),
                         const SizedBox(height: 16),
@@ -183,10 +183,10 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
           end: Offset.zero,
         ).animate(_cardControllers[0]),
         child: GestureDetector(
-          onTap: () => _startGame(4),
+          onTap: () => _startGame(8),
           child: _buildModernButton(
             title: 'FÁCIL',
-            subtitle: '4 pares',
+            subtitle: '8 pares',
             color: Colors.green,
             emoji: '😊',
           ),
@@ -199,10 +199,10 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
           end: Offset.zero,
         ).animate(_cardControllers[1]),
         child: GestureDetector(
-          onTap: () => _startGame(8),
+          onTap: () => _startGame(10),
           child: _buildModernButton(
             title: 'MÉDIO',
-            subtitle: '8 pares',
+            subtitle: '10 pares',
             color: Colors.orange,
             emoji: '😎',
           ),
@@ -215,10 +215,10 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
           end: Offset.zero,
         ).animate(_cardControllers[2]),
         child: GestureDetector(
-          onTap: () => _startGame(12),
+          onTap: () => _startGame(14),
           child: _buildModernButton(
             title: 'DIFÍCIL',
-            subtitle: '12 pares',
+            subtitle: '14 pares',
             color: Colors.red,
             emoji: '🔥',
           ),
@@ -237,14 +237,14 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
       margin: const EdgeInsets.symmetric(horizontal: 0),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [color, color.withOpacity(0.7)],
+          colors: [color, color.withAlpha(179)],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: color.withOpacity(0.6),
+            color: color.withAlpha(153),
             blurRadius: 20,
             offset: const Offset(0, 8),
             spreadRadius: 2,
@@ -256,7 +256,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withAlpha(77),
             width: 2,
           ),
         ),
@@ -281,7 +281,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
                     subtitle,
                     style: TextStyle(
                       fontSize: 14,
-                      color: Colors.white.withOpacity(0.85),
+                      color: Colors.white.withAlpha(217),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -292,7 +292,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withOpacity(0.25),
+                color: Colors.white.withAlpha(64),
               ),
               child: Text(
                 emoji,
@@ -314,7 +314,7 @@ class _MenuScreenState extends State<MenuScreen> with TickerProviderStateMixin {
           label,
           style: TextStyle(
             fontSize: 12,
-            color: Colors.white.withOpacity(0.7),
+            color: Colors.white.withAlpha(179),
             fontWeight: FontWeight.w500,
           ),
         ),
